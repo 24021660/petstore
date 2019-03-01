@@ -18,9 +18,9 @@ class LoginFrame(MyFrame):
         fgs.AddGrowableCol(0, 1)
         fgs.AddGrowableCol(1, 4)
 
-        okb_btn=wx.Button(parent=self,label='确定')
+        okb_btn=wx.Button(parent=self.contentpanel,label='确定')
         self.Bind(wx.EVT_BUTTON,self.okb_btn_click,okb_btn)
-        cancel_btn=wx.Button(parent=self,label='取消')
+        cancel_btn=wx.Button(parent=self.contentpanel,label='取消')
         self.Bind(wx.EVT_BUTTON,self.cancel_btn_click,cancel_btn)
 
         hbox=wx.BoxSizer(wx.HORIZONTAL)
